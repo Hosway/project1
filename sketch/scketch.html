@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scketch.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+
+            var currentScrollpos = window.pageYOffset;
+            if (prevScrollpos > currentScrollpos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollpos;
+        }
+
+    </script>
+    <div class="container">
+        <div id="nav">
+            <a href="#">about me</a>
+            <a href="#">skills</a>
+            <a href="#">contact me</a>
+        </div>
+
+    </div>
+    <header>
+        <h1>JG</h1>
+    </header>
+
+    <div class="container">
+        <img src="cliff.jpg" alt="photo">
+        <div class="center">
+            <h3>about me</h3>
+        </div>
+    </div>
+    <div id="content">
+        <p>Lord Vader, the fleet has moved out of light-speed, and we're preparing to...Aaagh! You have failed me for the last time, Admiral. Captain Piett. Yes, my lord. Make ready to land out troops beyond the energy shield and deploy the fleet so that nothing gets off that system. You are in command now, Admiral Piett. Thank you, Lord Vader. Oh! Nice to see a familiar face. E chu ta! ow rude! That sounds like an R2 unit in there. I wonder if... Hello? How interesting. Oh, my. Who are you? Oh, I'm terribly sorry. I...I didn't mean to intrude. No, no, please don't get up. No! Well, Your Highness, I guess this is it. That's right. Well, don't get all mushy on me. So long, Princess. Han! Yes, Your Highnessness? I thought you decided to stay. Well, the bounty hunter we ran into on Ord Mantell changed my mind. Han, we need you! We? Yes. Oh, what about you need? I need? I don't know what you're talking about. You probably don't. And what precisely am I supposed to know? Alert all commands. Ready for the tractor beam. Artoo, come back at once! You haven't finished with me yet! You don't know how to fix the hyperdrive. Chewbacca can do it. I'm standing here in pieces, and you're having delusions of grandeur! Oh, you did it! Let go. Sshh! et go, please. Don't get excited. Captain, being held by you isn't quite enough to get me excited. Sorry, sweetheart. We haven't got time for anything else.</p>
+    </div>
+</body>
+
+</html>
